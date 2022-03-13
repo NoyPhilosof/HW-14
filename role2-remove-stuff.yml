@@ -1,0 +1,6 @@
+---
+- hosts: servers
+  name: remove vim, zip, unzip
+  remote_user: root
+  roles:
+    - remove-apps 

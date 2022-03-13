@@ -1,0 +1,12 @@
+---
+- name: update repo
+  apt:
+    update_cache: yes
+
+- name: install vim, zip, unzip
+  apt:
+    name:
+      - vim
+      - zip
+      - unzip
+

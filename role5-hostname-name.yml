@@ -1,0 +1,6 @@
+---
+- hosts: all
+  name: Copy host's name to the machine in text file
+  remote_user: root
+  roles:
+    - deploy-template

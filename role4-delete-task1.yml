@@ -1,0 +1,7 @@
+---
+- hosts: all
+  name: remove /tmp/test1
+  remote_user: root
+  roles:
+    - remove-file
+

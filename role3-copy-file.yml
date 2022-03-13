@@ -1,0 +1,7 @@
+---
+- hosts: all
+  name: copy hello.txt to servers 
+  remote_user: root
+  roles:
+    - copy-file 
+

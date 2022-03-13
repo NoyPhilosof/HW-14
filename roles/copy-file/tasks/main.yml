@@ -1,0 +1,14 @@
+---
+- name: Create directory
+  file:
+    path: /tmp/test1
+    state: directory
+
+- name: Copy text file to new directory
+  copy:
+    src: hola.txt
+    dest: /tmp//test1/hello.txt
+    owner: root
+    group: root
+    mode: 0644
+

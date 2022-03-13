@@ -1,0 +1,14 @@
+---
+- name: Create directory
+  file:
+    path: /tmp/test2
+    state: directory
+
+- name: Copy text file to new directory
+  template:
+    src: hostname.j2 
+    dest: /tmp/test2/hostname.j2
+    owner: root
+    group: root
+    mode: 0644
+

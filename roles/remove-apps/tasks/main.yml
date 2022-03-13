@@ -1,0 +1,13 @@
+---
+- name: remove vim, zip and unzip
+  apt:
+    name:
+      - vim
+      - zip
+      - unzip
+    state: absent
+  
+- name: update repo
+  apt:
+    update_cache: yes
+

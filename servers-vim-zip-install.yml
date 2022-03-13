@@ -1,0 +1,17 @@
+---
+- hosts: servers
+  remote_user: root
+  tasks:
+
+  - name: update repo
+    apt:
+      update_cache: yes
+
+  - name: install vim, zip and unzip
+    package:
+      name:
+        - vim
+        - zip
+        - unzip
+      state: latest
+ 
